@@ -39,3 +39,28 @@ html, body {
     font-size: 2rem;
     font-family: 'Courgette', cursive;
 }
+
+.footer {
+    padding: 15px 0;
+    background-color: #24292e;
+    color: #fff
+}
+
+.soc-icon {
+    font-size: 30px;
+}
+.footer a {
+    color: unset;
+    text-decoration:none;
+}
+
+.footer-hr {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.copyright {
+    color: rgb(167, 167, 167);
+}
