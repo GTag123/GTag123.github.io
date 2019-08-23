@@ -71,7 +71,6 @@ html, body {
     }
 }
 
-
 .footer {
     /* padding: 15px 0; */
     background-color: #24292e;
@@ -105,24 +104,11 @@ html, body {
 }
 
 
-.bottom {
-    position: absolute;
-    bottom: 0;
-}
-
-
-
 .firstpage__arrow {
     position: absolute;
     bottom: 1.5rem;
     left: 50%;
     transform: translateX(-50%);
-}
-
-@media (max-width: 390px) {
-    .firstpage__arrow {
-        bottom: 1rem;
-    }
 }
 
 .arrow__down {
