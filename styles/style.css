@@ -102,7 +102,10 @@ html, body {
 .icons {
     padding-top: 1rem;
 }
-
+.bottom {
+    position: absolute;
+    bottom: 0;
+}
 .firstpage__arrow {
     position: absolute;
     bottom: 1.5rem;
