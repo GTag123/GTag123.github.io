@@ -47,6 +47,9 @@ html, body {
     font-family: 'Courgette', cursive;
 }
 @media (max-width: 390px) {
+    .name-wrap {
+        margin-bottom: 0;
+    }
     .title {
         font-size: 3rem;
         font-family: 'Lexend Deca', sans-serif;
@@ -105,6 +108,12 @@ html, body {
     bottom: 1.5rem;
     left: 50%;
     transform: translateX(-50%);
+}
+
+@media (max-width: 390px) {
+    .firstpage__arrow {
+        bottom: 1rem;
+    }
 }
 
 .arrow__down {
