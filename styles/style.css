@@ -48,9 +48,6 @@ html, body {
     font-family: 'Courgette', cursive;
 }
 @media (max-width: 390px) {
-    .name-wrap {
-        margin-bottom: 0;
-    }
     .title {
         font-size: 3rem;
         font-family: 'Lexend Deca', sans-serif;
