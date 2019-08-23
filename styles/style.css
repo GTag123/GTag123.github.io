@@ -46,6 +46,27 @@ html, body {
     font-size: 2rem;
     font-family: 'Courgette', cursive;
 }
+@media (max-width: 390px) {
+    .title {
+        font-size: 3rem;
+        font-family: 'Lexend Deca', sans-serif;
+    }
+    .subtitle {
+        font-size: 1rem;
+        font-family: 'Courgette', cursive;
+    }
+}
+@media (max-width: 240px) {
+    .title {
+        font-size: 2rem;
+        font-family: 'Lexend Deca', sans-serif;
+    }
+    .subtitle {
+        font-size: 1rem;
+        font-family: 'Courgette', cursive;
+    }
+}
+
 
 .footer {
     /* padding: 15px 0; */
