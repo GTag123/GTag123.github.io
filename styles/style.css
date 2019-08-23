@@ -121,8 +121,8 @@ html, body {
 }
 .content__item {
     background-color: #f0f0f0;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
 }
 .content__item:nth-child(odd) {
     background-color: #fff;
