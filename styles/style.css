@@ -19,10 +19,17 @@ html, body {
     left: 15px;
     margin-bottom: 20px;
 }
+
 .logo-wrap img {
     width: auto;
     height: 2.5rem;
+    transition: all 0.3s ease-in-out;
 }
+.logo-wrap img:hover {
+    width: auto;
+    height: 3rem;
+}
+
 .name-wrap {
     text-align: center;
     color: white;
@@ -41,26 +48,40 @@ html, body {
 }
 
 .footer {
-    padding: 15px 0;
+    /* padding: 15px 0; */
     background-color: #24292e;
     color: #fff
 }
 
 .soc-icon {
     font-size: 30px;
+    transition: all .4s ease-in-out;
 }
+
+.soc-icon:hover {
+    transform: scale(1.5);
+}
+
 .footer a {
     color: unset;
     text-decoration:none;
 }
 
 .footer-hr {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    border: 0;
     border-top: 1px solid #eee;
 }
 
 .copyright {
     color: rgb(167, 167, 167);
+}
+
+.icons {
+    padding-top: 1rem;
+}
+
+.firstpage__arrow {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
 }

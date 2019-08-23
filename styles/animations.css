@@ -1,3 +1,4 @@
+/* animate.css */
 @keyframes fadeInDown {
 from {
     opacity: 0;
@@ -37,4 +38,21 @@ animation-fill-mode: both;
 .animated.slow {
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
+}
+
+/* custom */
+.bounce {
+    animation: bounce_6509 3.6s ease infinite;
+    transform-origin: 50% 50%;
+  }
+  
+  @keyframes bounce_6509 {
+    0% { transform:translateY(0) }
+    5.55556% { transform:translateY(0) }
+    11.11111% { transform:translateY(0) }
+    22.22222% { transform:translateY(-15px) }
+    27.77778% { transform:translateY(0) }
+    33.33333% { transform:translateY(-15px) }
+    44.44444% { transform:translateY(0) }
+    100% { transform:translateY(0) }
 }
