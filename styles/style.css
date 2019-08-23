@@ -119,9 +119,50 @@ html, body {
     border-top: 0.30rem solid rgba(255, 255, 255, 1);
     border-right: 0.30rem solid rgba(255, 255, 255, 1);
 }
-.bg-color {
-    background-color: #f8f8f8;
+.content__item {
+    background-color: #f0f0f0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
-.bg-color:nth-child(odd) {
+.content__item:nth-child(odd) {
     background-color: #fff;
+}
+
+.about__img {
+    width: auto;
+    height: 15rem;
+}
+
+.about__antilast {
+    width: auto;
+}
+
+.services__img {
+    height: 10rem;
+    width: auto;
+}
+
+.services__zabiv {
+    height: 400px;
+}
+
+@media (max-width: 500px) {
+    .about__img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about__antilast {
+        width: 100%;
+    }
+    
+    .services__img {
+        height: auto;
+        width: 100%;
+    }
+    
+    .services__zabiv {
+        width: 100%;
+        height: auto;
+    }
 }
