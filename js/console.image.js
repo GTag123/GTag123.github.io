@@ -1,0 +1,1 @@
+console.image=function(n,o=.3,i,a="contain"){var e=new Image;return e.src=n,e.onload=function(){var i=[`padding: ${this.height/1*o}px ${this.width/1*o}px;`,`background: url('${n}') no-repeat;`,`background-size: ${a};`].join(" ");console.log("%c ",i)},i};
