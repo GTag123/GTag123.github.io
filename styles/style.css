@@ -71,7 +71,7 @@ html, body {
 .footer {
     /* padding: 15px 0; */
     background-color: #24292e;
-    color: #fff
+    color: #fff;
 }
 
 .soc-icon {
@@ -84,7 +84,7 @@ html, body {
 }
 
 .footer a {
-    color: unset;
+    color: #fff;
     text-decoration:none;
 }
 
@@ -164,5 +164,30 @@ html, body {
     .services__zabiv {
         width: 100%;
         height: auto;
+    }
+
+
+    
+}
+
+.list__items {
+    max-width: 50%;
+}
+.list__img {
+    max-width: 50%;
+}
+.list__img img {
+    width: 100%;
+    height: auto;
+}
+@media (max-width: 500px) {
+    .list__items {
+        max-width: 100%;
+    }
+    .list__img {
+        display: none;
+    }
+    .list__img img {
+        display: none;
     }
 }
