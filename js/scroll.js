@@ -9,7 +9,13 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 // ===== Scroll to Top ==== 
 $(window).scroll(function () {
   if ($(this).scrollTop() >= document.documentElement.clientHeight) {        // If page is scrolled more than 50px
-    $('#return-to-top').fadeIn(500);    // Fade in the arrow
+    $('#return-to-top').fadeIn({
+        duration: "fast",
+        start: function () {
+            $(this).css({
+                display: "flex"
+            });
+        }});    // Fade in the arrow
   } else {
     $('#return-to-top').fadeOut(500);   // Else fade out the arrow
   }
