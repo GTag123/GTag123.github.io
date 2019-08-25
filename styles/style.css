@@ -74,7 +74,7 @@ html, body {
 }
 
 .footer {
-    /* padding: 15px 0; */
+    padding-top: 1rem;
     background-color: #24292e;
     color: #fff;
 }
@@ -103,11 +103,6 @@ html, body {
 .copyright {
     color: rgb(167, 167, 167);
 }
-
-.icons {
-    padding-top: 1rem;
-}
-
 
 .firstpage__arrow {
     position: absolute;
