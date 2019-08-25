@@ -127,7 +127,7 @@ html, body {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
 }
-.content__item:nth-child(odd) {
+.content__item:nth-child(even) {
     background-color: #fff;
 }
 
