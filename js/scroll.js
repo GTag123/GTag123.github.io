@@ -8,9 +8,10 @@ $(document).ready(function () {
   });
 
   // ===== Scroll to Top ==== 
+  let element = $('#return-to-top');
   $(window).scroll(function () {
     if ($(this).scrollTop() >= document.documentElement.clientHeight) {        // If page is scrolled more than 50px
-      $('#return-to-top').fadeIn({
+      element.fadeIn({
         duration: "fast",
         start: function () {
           $(this).css({
@@ -19,17 +20,22 @@ $(document).ready(function () {
         }
       });    // Fade in the arrow
     } else {
-      $('#return-to-top').fadeOut(500);   // Else fade out the arrow
+      element.fadeOut(500);   // Else fade out the arrow
     }
   });
-  $('#return-to-top').click(function (event) {      // When arrow is clicked
-    event.preventDefault();
-    $('body,html').animate({
-      scrollTop: 0                       // Scroll to top of body
-    }, 500);
+
+  element.click(scrollToTop);
+  element.on('touchstart mouseenter', function (e) {
+    $(this).addClass('to-top-hover');
   });
-  $('#return-to-top').on('touchstart touchend', function (e) {
-    e.preventDefault();
-    $(this).toggleClass('to-top-hover');
+  element.on('touchend mouseleave click', function(e) {
+    $(this).removeClass('to-top-hover');
   });
 });
+
+function scrollToTop(event) {      // When arrow is clicked
+  event.preventDefault();
+  $('body,html').animate({
+    scrollTop: 0                       // Scroll to top of body
+  }, 500);
+}
