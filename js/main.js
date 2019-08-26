@@ -3,5 +3,5 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Люди добрые простите за jquery пж! Скролл на нативном js получился корявый');
     let age = document.querySelector(".age"),
         birthday = new Date(2005,2,11);
-    age.textContent = new Date(Date.now() - birthday).getFullYear() - 1970
+    age.textContent = new Date(Date.now() - birthday).getFullYear() - 1970;
 });

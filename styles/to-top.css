@@ -31,13 +31,16 @@
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
-/* #return-to-top:hover,  */.to-top-hover {
+.to-top-dark {
+    background: #fff !important;
+}
+.to-top-hover {
     background: rgba(0, 0, 0, 0.9) !important;
 }
-/* #return-to-top:hover .arrow-up,  */.to-top-hover .arrow-up {
+.to-top-hover .arrow-up {
     transform: scale(1.3) translateY(-10%);
 
 }
-/* #return-to-top:hover .arrow-up path,   */.to-top-hover .arrow-up path{
-    fill: #fff;
+.to-top-hover .arrow-up path{
+    fill: #fff !important;
 }

@@ -10,7 +10,9 @@ $(document).ready(function () {
   // ===== Scroll to Top ==== 
   let element = $('#return-to-top');
   $(window).scroll(function () {
-    if ($(this).scrollTop() >= document.documentElement.clientHeight) {        // If page is scrolled more than 50px
+    let scrollBottom =  document.documentElement.scrollHeight - document.documentElement.scrollTop - document.documentElement.clientHeight;
+
+    if (document.documentElement.scrollTop >= document.documentElement.clientHeight) {        // If page is scrolled more than 50px
       element.fadeIn({
         duration: "fast",
         start: function () {
@@ -21,6 +23,11 @@ $(document).ready(function () {
       });    // Fade in the arrow
     } else {
       element.fadeOut(500);   // Else fade out the arrow
+    }
+    if (scrollBottom <= $('.footer').outerHeight()) {
+      element.addClass('to-top-dark');
+    } else {
+      if ( element.hasClass('to-top-dark') ) element.removeClass('to-top-dark');
     }
   });
 
