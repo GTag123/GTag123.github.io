@@ -8,9 +8,11 @@ $(document).ready(function () {
   });
 
   // ===== Scroll to Top ==== 
-  let element = $('#return-to-top');
+  let element = $('#return-to-top'),
+    elementBottom = parseInt(element.css('bottom')),
+    elementHeight = element.outerHeight();
   $(window).scroll(function () {
-    let scrollBottom =  document.documentElement.scrollHeight - document.documentElement.scrollTop - document.documentElement.clientHeight;
+    let scrollBottom = document.documentElement.scrollHeight - document.documentElement.scrollTop - document.documentElement.clientHeight;
 
     if (document.documentElement.scrollTop >= document.documentElement.clientHeight) {        // If page is scrolled more than 50px
       element.fadeIn({
@@ -24,10 +26,11 @@ $(document).ready(function () {
     } else {
       element.fadeOut(500);   // Else fade out the arrow
     }
-    if (scrollBottom <= $('.footer').outerHeight()) {
+
+    if (scrollBottom + elementBottom + (elementHeight / 2)  <= $('.footer').outerHeight()) {
       element.addClass('to-top-dark');
     } else {
-      if ( element.hasClass('to-top-dark') ) element.removeClass('to-top-dark');
+      if (element.hasClass('to-top-dark')) element.removeClass('to-top-dark');
     }
   });
 
@@ -35,7 +38,7 @@ $(document).ready(function () {
   element.on('touchstart mouseenter', function (e) {
     $(this).addClass('to-top-hover');
   });
-  element.on('touchend mouseleave click', function(e) {
+  element.on('touchend mouseleave click', function (e) {
     $(this).removeClass('to-top-hover');
   });
 });
