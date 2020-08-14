@@ -131,13 +131,22 @@ html, body {
     background-color: #fff;
 }
 
+#about {
+    padding-bottom: 0.3em;
+}
+
 .about__img {
     width: auto;
     height: 15rem;
 }
 
-.about__antilast {
-    width: auto;
+.about__kaifuem {
+    margin-top: 0.2em;
+    width: 20vw;
+}
+
+#about__todo {
+    margin-top: 0.4em;
 }
 
 .services__img {
@@ -155,8 +164,9 @@ html, body {
         height: auto;
     }
 
-    .about__antilast {
+    .about__kaifuem {
         width: 100%;
+        height: auto;
     }
     
     .services__img {
